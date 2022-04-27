@@ -3,23 +3,34 @@ languageCode = 'en-us'
 title = 'kb works'
 
 [menu]
-[[menu.main]]
+[[menu.nav]]
   identifier = 'aanbod'
   name = 'aanbod'
+  title = 'aanbod'
   url = '/aanbod/'
+  pageref = '/aanbod/'
   weight = 0
-[[menu.main]]
+
+[[menu.nav]]
   identifier = 'kennis'
   name = 'kennis'
+  title = 'kennis'
   url = '/kennis/'
+  pageref = '/kennis/'
   weight = 1
-[[menu.main]]
+
+[[menu.nav]]
   identifier = 'over ones'
   name = 'over ones'
+  title = 'over ones'
   url = '/over-kbworks/'
+  pageref = '/over-kbworks/'
   weight = 2
-[[menu.main]]
+
+[[menu.nav]]
   identifier = 'contact'
   name = 'contact'
+  title = 'contact'
+  pageref = '/contact/'
   url = '/contact/'
   weight = 3

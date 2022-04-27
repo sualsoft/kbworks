@@ -8,8 +8,16 @@
     <nav id="navbar myMenu1" class="navbar order-last order-lg-0">
       {{ $currentPage := . }}
       <ul>
-        {{ range .Site.Menus.main }}
-        <li><a class="nav-link scrollto {{ if $currentPage.IsMenuCurrent "main" . }}active{{ end }}" href="{{ .URL }}">{{ .Name }}</a></li>
+        {{ range .Site.Menus.nav }}
+        <!---->
+
+        <li>
+          <a
+            class="nav-link scrollto {{ if $currentPage.IsMenuCurrent "nav" . }}active{{ end }}"
+            href="{{ .URL }}"
+            >{{ .Name }}</a
+          >
+        </li>
         {{end}}
         <li>
           <a
