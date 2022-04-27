@@ -1,0 +1,27 @@
+<!-- ======= Header ======= -->
+<header id="header" class="fixed-top">
+  <div class="container d-flex align-items-center justify-content-lg-between">
+    <a href="/" class="logo me-auto me-lg-0"
+      ><img src="/assets/img/logo.png" alt="" class="img-fluid"
+    /></a>
+
+    <nav id="navbar myMenu1" class="navbar order-last order-lg-0">
+      {{ $currentPage := . }}
+      <ul>
+        {{ range .Site.Menus.main }}
+        <li><a class="nav-link scrollto {{ if $currentPage.IsMenuCurrent "main" . }}active{{ end }}" href="{{ .URL }}">{{ .Name }}</a></li>
+        {{end}}
+        <li>
+          <a
+            href="https://www.linkedin.com/smart-links/AQFg-jdcYRvqPw"
+            class="get-started-btn scrollto"
+            >GRATIS CHECKLIST</a
+          >
+        </li>
+      </ul>
+      <i class="bi bi-list mobile-nav-toggle"></i>
+    </nav>
+    <!-- .navbar -->
+  </div>
+</header>
+<!-- End Header -->
