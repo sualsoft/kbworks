@@ -10,42 +10,284 @@
     <!-- End Header -->
 
     <!-- ======= Hero Section ======= -->
+    {{ with .Params.hero }}
     <section
-      id="hero2"
+      id="hero3"
       class="d-flex align-items-center justify-content-center"
+      style="background-image: url(  {{.cover_image}}  )"
     >
+      {{end}}
       <div
         class="container position-relative"
         data-aos="zoom-in"
         data-aos-delay="100"
       >
         <div class="row align-items-center justify-content-center">
-          <div class="col-md-9 text-center">
-            <h1>DAT WIL JE NIET MISSEN</h1>
-            <h2>Onze artikelen over Microsoft Teams en Microsoft 365</h2>
-            <div class="wrap mt-5">
-              <div class="search mt-5">
-                <input
-                  type="text"
-                  class="searchTerm"
-                  placeholder="What are you looking for?"
-                />
-                <button type="submit" class="searchButton">
-                  <i class="bi bi-search"></i>
-                </button>
-              </div>
-            </div>
+          <div class="col-md-12 text-center">
+            <h1>{{.Title}}</h1>
           </div>
         </div>
       </div>
+      <div class="decoration">
+        <img src="/assets/img/bg-decoration.png" alt="" />
+      </div>
     </section>
+
     <!-- End Hero -->
 
     <main id="main">
       <!-- ======= blog Section ======= -->
       <section class="blog-section">
         <div class="container" data-aos="fade-up">
-          <div class="row">{{.Content}}</div>
+          <div class="row">
+            <div class="col-md-8 blog-content">
+              {{.Content}}
+              <div class="social-icons">
+                <ul>
+                  <li>
+                    <a
+                      href="https://open.spotify.com/show/31oH2XhMBC0JqVW8r59Zbl"
+                      target="_blank"
+                      ><img src="/assets/img/Spotify.jpg" alt=""
+                    /></a>
+                  </li>
+
+                  <li>
+                    <a
+                      href="https://podcasts.apple.com/nl/podcast/de-kbworks-podcast/id1494639563"
+                      target="_blank"
+                      ><img src="/assets/img/ApplePodcasts.png" alt=""
+                    /></a>
+                  </li>
+
+                  <li>
+                    <a
+                      href="https://www.stitcher.com/show/de-kbworks-podcast"
+                      target="_blank"
+                      ><img src="/assets/img/Stitcher.png" alt=""
+                    /></a>
+                  </li>
+
+                  <li>
+                    <a
+                      href="https://tunein.com/podcasts/Business--Economics-Podcasts/KbWorks-Podcast-p1284993/"
+                      target="_blank"
+                      ><img src="/assets/img/Tunein-300x77.png" alt=""
+                    /></a>
+                  </li>
+
+                  <li>
+                    <a
+                      href="https://podcasts.apple.com/nl/podcast/de-kbworks-podcast/id1494639563"
+                      target="_blank"
+                      ><img src="/assets/img/ApplePodcasts.png" alt=""
+                    /></a>
+                  </li>
+                </ul>
+              </div>
+              <div class="youtube-poster mt-5 mb-5">
+                <img
+                  src="/assets/img/blog/Blogs-22.png"
+                  alt=""
+                  class="img-fluid"
+                />
+              </div>
+              <div class="social-share">
+                <ul>
+                  <li class="in">
+                    <button>
+                      <i class="bi bi-linkedin"></i>
+                      <p>LinkedIn</p>
+                    </button>
+                  </li>
+                  <li class="fb">
+                    <button>
+                      <i class="bi bi-facebook"></i>
+                      <p>Facebook</p>
+                    </button>
+                  </li>
+                  <li class="tw">
+                    <button>
+                      <i class="bi bi-twitter"></i>
+                      <p>Twitter</p>
+                    </button>
+                  </li>
+                </ul>
+              </div>
+              <div class="quote text-center">
+                <h2>Dit wil je niet missen!</h2>
+                <h4>
+                  Loop niet achter de feiten aan, maar blijf voorop lopen.
+                  <br />
+                  Bespaar tijd en krijg als eerste informatie over de nieuwste
+                  <br />
+                  ontwikkelingen binnen Microsoft 365.
+                </h4>
+                <div class="btn">
+                  <a
+                    href="https://www.linkedin.com/newsletters/tips-rondom-microsoft365-6900855304196628480/"
+                    >Klik hier en blijf voorop lopen</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 side-bar">
+              <div class="quote">
+                <h2>Dit wil je niet missen!</h2>
+                <p>
+                  Loop niet achter de feiten aan, maar blijf voorop lopen.
+                  Bespaar tijd en krijg als eerste informatie over de nieuwste
+                  ontwikkelingen binnen Microsoft 365.
+                </p>
+                <div class="btn">
+                  <a
+                    href="https://www.linkedin.com/newsletters/tips-rondom-microsoft365-6900855304196628480/"
+                    >Klik hier en blijf voorop lopen</a
+                  >
+                </div>
+              </div>
+              <div class="blog-search mt-5 pt-5">
+                <h2>Zoeken</h2>
+                <div class="forms">
+                  <form id="form">
+                    <input
+                      type="search"
+                      id="query"
+                      name="q"
+                      placeholder="Zoeken..."
+                    />
+                    <button type="submit"><i class="bi bi-search"></i></button>
+                  </form>
+                </div>
+                <div class="category mt-5">
+                  <h2>Categorieën</h2>
+                  <ul>
+                    <li><a href="">Governance </a>(6)</li>
+                    <li><a href="">Management </a>(3)</li>
+                    <li><a href="">Microsoft 365 </a>(50)</li>
+                    <li><a href="">Microsoft Teams </a>(63)</li>
+                    <li><a href="">Nieuws </a>(26)</li>
+                    <li><a href="">Office 365 </a>(82)</li>
+                    <li><a href="">Onderwijs </a>(7)</li>
+                    <li><a href="">One-pager </a>(1)</li>
+                    <li><a href="">Podcast </a>(26)</li>
+                    <li><a href="">Productiviteit </a>(51)</li>
+                    <li><a href="">Productivityhacks </a>(25)</li>
+                    <li><a href="">SharePoint </a>(11)</li>
+                    <li><a href="">Updates </a>(21)</li>
+                  </ul>
+                </div>
+                <div class="re-blog">
+                  <h2>Recente berichten</h2>
+                  <div class="blog-post">
+                    <img src="/assets/img/blog/Blogs-21-1.png" alt="" />
+                    <div class="content">
+                      <p>
+                        <a href=""
+                          ><span>#03: Veilig werken met Microsoft 365</span></a
+                        >
+                      </p>
+                      <p>
+                        <a href=""
+                          >Debby van der Mije 12 oktober 2021 Geen reacties</a
+                        >
+                      </p>
+                    </div>
+                  </div>
+                  <div class="blog-post">
+                    <img src="/assets/img/blog/Blogs-21-1.png" alt="" />
+                    <div class="content">
+                      <p>
+                        <a href=""
+                          ><span>#03: Veilig werken met Microsoft 365</span></a
+                        >
+                      </p>
+                      <p>
+                        <a href=""
+                          >Debby van der Mije 12 oktober 2021 Geen reacties</a
+                        >
+                      </p>
+                    </div>
+                  </div>
+                  <div class="blog-post">
+                    <img src="/assets/img/blog/Blogs-21-1.png" alt="" />
+                    <div class="content">
+                      <p>
+                        <a href=""
+                          ><span>#03: Veilig werken met Microsoft 365</span></a
+                        >
+                      </p>
+                      <p>
+                        <a href=""
+                          >Debby van der Mije 12 oktober 2021 Geen reacties</a
+                        >
+                      </p>
+                    </div>
+                  </div>
+                  <div class="blog-post">
+                    <img src="/assets/img/blog/Blogs-21-1.png" alt="" />
+                    <div class="content">
+                      <p>
+                        <a href=""
+                          ><span>#03: Veilig werken met Microsoft 365</span></a
+                        >
+                      </p>
+                      <p>
+                        <a href=""
+                          >Debby van der Mije 12 oktober 2021 Geen reacties</a
+                        >
+                      </p>
+                    </div>
+                  </div>
+                  <div class="blog-post">
+                    <img src="/assets/img/blog/Blogs-21-1.png" alt="" />
+                    <div class="content">
+                      <p>
+                        <a href=""
+                          ><span>#03: Veilig werken met Microsoft 365</span></a
+                        >
+                      </p>
+                      <p>
+                        <a href=""
+                          >Debby van der Mije 12 oktober 2021 Geen reacties</a
+                        >
+                      </p>
+                    </div>
+                  </div>
+                  <div class="blog-post">
+                    <img src="/assets/img/blog/Blogs-21-1.png" alt="" />
+                    <div class="content">
+                      <p>
+                        <a href=""
+                          ><span>#03: Veilig werken met Microsoft 365</span></a
+                        >
+                      </p>
+                      <p>
+                        <a href=""
+                          >Debby van der Mije 12 oktober 2021 Geen reacties</a
+                        >
+                      </p>
+                    </div>
+                  </div>
+                  <div class="blog-post">
+                    <img src="/assets/img/blog/Blogs-21-1.png" alt="" />
+                    <div class="content">
+                      <p>
+                        <a href=""
+                          ><span>#03: Veilig werken met Microsoft 365</span></a
+                        >
+                      </p>
+                      <p>
+                        <a href=""
+                          >Debby van der Mije 12 oktober 2021 Geen reacties</a
+                        >
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
       <!-- End Blog Section -->
