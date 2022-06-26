@@ -46,194 +46,38 @@
       <section class="blog-section">
         <div class="container" data-aos="fade-up">
           <div class="row">
+            {{ range .Pages }}
             <div
               class="col-md-4 pt-4 pt-lg-0 content d-flex align-items-stretch mt-4"
             >
               <div class="card">
                 <img
                   class="card-img-top"
-                  src="/assets/img/blog/Blogs-21-1.png"
+                  src="{{ with .Params.image }}{{ . }}{{ end }}"
                   alt="Card image cap"
                 />
                 <div class="badge">
-                  <p>Microsoft 365</p>
+                  <p>{{ with .Params.category }}{{ . }}{{ end }}</p>
                 </div>
                 <div class="card-body">
-                  <h5 class="card-title">
-                    #03: Veilig werken met Microsoft 365
-                  </h5>
-                  <a href="#" class="btn btn-primary mt-3"
+                  <h5 class="card-title">{{.Title}}</h5>
+                  <a href="{{ .Permalink }}" class="btn btn-primary mt-3"
                     >Read More <i class="bi bi-arrow-right-short"></i
                   ></a>
                   <div class="card-author mt-4">
                     <img
-                      src="/assets/img/91f5acc932e1256b68cc4bab1612f6a1.png"
+                      src="{{ with .Params.author_image }}{{ . }}{{ end }}"
                       alt="Author"
                     />
                     <h5>
                       By: <br />
-                      <span>Debby van der Mije</span>
+                      <span>{{ with .Params.author }}{{ . }}{{ end }}</span>
                     </h5>
                   </div>
                 </div>
               </div>
             </div>
-
-            <div
-              class="col-md-4 pt-4 pt-lg-0 content d-flex align-items-stretch mt-4"
-            >
-              <div class="card">
-                <img
-                  class="card-img-top"
-                  src="/assets/img/blog/Blogs-21-1.png"
-                  alt="Card image cap"
-                />
-                <div class="card-body">
-                  <h5 class="card-title">
-                    #02: Trainingen als onderdeel van het adoptieproces (en
-                    waarom alleen trainingen niet volstaan binnen een adoptie
-                    traject)
-                  </h5>
-                  <a href="#" class="btn btn-primary stretched-link mt-3"
-                    >Read More <i class="bi bi-arrow-right-short"></i
-                  ></a>
-                  <div class="card-author mt-4">
-                    <img
-                      src="/assets/img/91f5acc932e1256b68cc4bab1612f6a1.png"
-                      alt="Author"
-                    />
-                    <h5>
-                      By: <br />
-                      <span>Debby van der Mije</span>
-                    </h5>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div
-              class="col-md-4 pt-4 pt-lg-0 content d-flex align-items-stretch mt-4"
-            >
-              <div class="card">
-                <img
-                  class="card-img-top"
-                  src="/assets/img/blog/Blogs-21-1.png"
-                  alt="Card image cap"
-                />
-                <div class="card-body">
-                  <h5 class="card-title">
-                    #01: Technologische ontwikkelingen en Artificial
-                    Intelligence
-                  </h5>
-                  <a href="#" class="btn btn-primary stretched-link mt-3"
-                    >Read More <i class="bi bi-arrow-right-short"></i
-                  ></a>
-                  <div class="card-author mt-4">
-                    <img
-                      src="/assets/img/91f5acc932e1256b68cc4bab1612f6a1.png"
-                      alt="Author"
-                    />
-                    <h5>
-                      By: <br />
-                      <span>Debby van der Mije</span>
-                    </h5>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div
-              class="col-md-4 pt-4 pt-lg-0 content d-flex align-items-stretch mt-4"
-            >
-              <div class="card">
-                <img
-                  class="card-img-top"
-                  src="/assets/img/blog/Blogs-21-1.png"
-                  alt="Card image cap"
-                />
-                <div class="card-body">
-                  <h5 class="card-title">
-                    #03: Veilig werken met Microsoft 365
-                  </h5>
-                  <a href="#" class="btn btn-primary stretched-link mt-3"
-                    >Read More <i class="bi bi-arrow-right-short"></i
-                  ></a>
-                  <div class="card-author mt-4">
-                    <img
-                      src="/assets/img/91f5acc932e1256b68cc4bab1612f6a1.png"
-                      alt="Author"
-                    />
-                    <h5>
-                      By: <br />
-                      <span>Debby van der Mije</span>
-                    </h5>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div
-              class="col-md-4 pt-4 pt-lg-0 content d-flex align-items-stretch mt-4"
-            >
-              <div class="card">
-                <img
-                  class="card-img-top"
-                  src="/assets/img/blog/Blogs-21-1.png"
-                  alt="Card image cap"
-                />
-                <div class="card-body">
-                  <h5 class="card-title">
-                    #02: Trainingen als onderdeel van het adoptieproces (en
-                    waarom alleen trainingen niet volstaan binnen een adoptie
-                    traject)
-                  </h5>
-                  <a href="#" class="btn btn-primary stretched-link mt-3"
-                    >Read More <i class="bi bi-arrow-right-short"></i
-                  ></a>
-                  <div class="card-author mt-4">
-                    <img
-                      src="/assets/img/91f5acc932e1256b68cc4bab1612f6a1.png"
-                      alt="Author"
-                    />
-                    <h5>
-                      By: <br />
-                      <span>Debby van der Mije</span>
-                    </h5>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div
-              class="col-md-4 pt-4 pt-lg-0 content d-flex align-items-stretch mt-4"
-            >
-              <div class="card">
-                <img
-                  class="card-img-top"
-                  src="/assets/img/blog/Blogs-21-1.png"
-                  alt="Card image cap"
-                />
-                <div class="card-body">
-                  <h5 class="card-title">
-                    #01: Technologische ontwikkelingen en Artificial
-                    Intelligence
-                  </h5>
-                  <a href="#" class="btn btn-primary stretched-link mt-3"
-                    >Read More <i class="bi bi-arrow-right-short"></i
-                  ></a>
-                  <div class="card-author mt-4">
-                    <img
-                      src="/assets/img/91f5acc932e1256b68cc4bab1612f6a1.png"
-                      alt="Author"
-                    />
-                    <h5>
-                      By: <br />
-                      <span>Debby van der Mije</span>
-                    </h5>
-                  </div>
-                </div>
-              </div>
-            </div>
+            {{end}}
           </div>
         </div>
       </section>

@@ -1230,6 +1230,12 @@ section {
 .blog-content {
   padding-right: 25px;
 }
+.blog-content ul li {
+  font-size: 22px !important;
+}
+.blog-content ol {
+  font-size: 22px !important;
+}
 
 .blog-content img {
   width: 90%;
