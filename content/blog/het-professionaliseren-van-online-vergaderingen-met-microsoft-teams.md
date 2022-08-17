@@ -1,5 +1,5 @@
 ---
-title: "Het professionaliseren van online vergaderingen met Microsoft Teams"
+title: " Het professionaliseren van online vergaderingen met Microsoft Teams"
 category: Management
 description: "Debby van der Mije  12 oktober 2021  Geen reacties"
 image: /assets/img/blog/professionaliseren-teams-vergaderingen.png
@@ -19,12 +19,8 @@ Waar in 2020 online vergaderen een noodoplossing leek door de corona crisis, zie
 
 - Veiligheid: we kennen allemaal wel iemand die per ongeluk verkeerde informatie deelde door het verkeerd delen van het scherm. Voorkom risico’s en voorzie medewerkers van de juiste toolkennis en ervaring.
 
-  
-
 - De tool is het middel, niet het doel.
   Microsoft Teams faciliteert de vergaderingen, net als de vergaderzaal op kantoor. In 2020 waren technische problemen een prima excuus, tegenwoordig is online vergaderen het nieuwe normaal en wordt er verwacht dat dit goed verloopt. Dit mag geen belemmering meer vormen. Is dat het wel? Kijk dan waar het probleem vandaag komt. Hoe is het gebruikersniveau binnen jouw organisatie? Zijn de juiste technische middelen aanwezig?
-
-  
 
 - Hybride vergaderen neemt een toevlucht en zorgt voor nog meer aandacht voor digitaal vergaderen. Is jouw (digitale) werkomgeving hiervoor ingericht?
 
@@ -40,4 +36,4 @@ Waar in 2020 online vergaderen een noodoplossing leek door de corona crisis, zie
 
 Wij helpen organisaties met het creëren van een veilige en beheersbare digitale werkomgeving waar medewerkers met plezier kunnen werken. Oók op het gebied van online- en hybride vergaderen.
 
-Meer informatie over het scenario ‘Efficiënt (hybride) vergaderen’ vind je [hier](https://kbworks.nl/aanbod/). 
+Meer informatie over het scenario ‘Efficiënt (hybride) vergaderen’ vind je [hier](https://kbworks.nl/aanbod/).
